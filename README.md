@@ -1,9 +1,18 @@
-# Wendi Examples
-Notebooks that will appear on NuGrid wendi or AstroHub servers that demonstrate 
-NuGrid tools, such as the exploration of NuGrid Set1 data.
+# The Web Exploration of NuGrid Datasets: Interactive (WENDI)
 
-If you have added an example the Docker image of the jupyterhub server needs to 
-rebuilt (@fherwig).
+The interface provides a variety of NuGrid data access, processing and analysis tools via Jupyter notebooks.
 
-On this repository only notebooks are allowed that work on the Astrohub and 
-Wendi-silver. Links to these servers: http://www.nugridstars.org
+
+
+## StellarDataSets
+
+NuGrid provides stellar evolution and post-processing nucleosynthesis data for exploration in the ***StellarDataSets*** directory.
+
+
+## SYGMA
+
+The web interface of The Stellar Yields for Galactic Modeling Applications (SYGMA) module.
+The module allows to calculate the ejecta and stellar feedback of simple stellar populations as a function of time.
+You can find it in the ***SGYMA*** directory.
+
+
