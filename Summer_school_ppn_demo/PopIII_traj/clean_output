@@ -1,0 +1,3 @@
+rm -f *DAT OUT fort.6
+rm -f x-time.dat
+rm -f *png
