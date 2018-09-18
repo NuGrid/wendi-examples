@@ -1,0 +1,41 @@
+! this file is for setting control parameters for the NFR solver
+! please go to bottom of this file to learn how namelists work
+
+! detailed documentation see ../DOC/ppn-chapter.pdf
+
+&ppn_solver
+
+      ITTD = 6               ! how many times before sub-timesteps applied         
+      DGRD = 1.0d-3          ! convergence limit for largest relative correction   
+      GRDTHRESHOLD = 1.0D-15 ! threshold for applying DGRD test                    
+      IRDN = 2               ! switch for a dynamic network in solver              
+      CYMINFORMAL = 1.0D-30  ! the solver 0    
+      mat_solv_option = 5    ! 1: numerical recipies (slow)
+                             ! 2: leqs from Frank (slowest)
+                             ! 3: LAPACK/ACML MKL (fast; requires MKL or ACML)
+                             ! 4: Intel MKL direct sparse solver (faster; requires MKL)
+                             ! 5: SuperLU direct sparse solver (fastest & open source)
+/
+
+! *** end of namelist
+
+   ! the parameter values are given as fortran95 "namelists"
+   ! here's a brief summary of how things work with namelists.
+   ! each line in a namelist is of the form   name = value ! comment
+   ! each name must be declared as a control in the program,
+   ! but you don't need to include all of the controls in the list.
+   ! and the order of the list doesn't matter.
+   ! blank lines and comment lines can be freely included in the list.
+   ! blanks at the start of a line containing a name-value pair are okay too.
+   ! all of the controls are given reasonable default values at initialization.
+   ! so you only need to set the ones that you actually want to change
+   ! if you don't want to change a control, but you do want to keep in the list
+   ! either comment out the line, or leave the value field blank.
+   ! fortran supports structured values in namelists (arrays and derived types)
+   ! but for simplicity, we only use basic types (integers, doubles, logicals, strings).
+   ! values are given using the usual fortran syntax.
+   ! for example, character string values are enclosed in quotes
+   ! ****** REMINDER ******
+   ! A '/' character terminates the namelist.
+   ! So, do not use '/' outside of comments or strings.
+   ! In particular, don't write something like 1d0/3d0 as a value.

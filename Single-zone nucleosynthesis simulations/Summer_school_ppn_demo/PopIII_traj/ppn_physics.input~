@@ -1,0 +1,180 @@
+&ppn_physics
+
+        ININET  = 0
+        I_NSE   = 0
+
+        NVCP    = 57
+        NRCP    = 110
+        NNN     = 1097
+        TBETAMIN = 0.5
+	INDEX_REACLIB = 2
+/
+#  This is PPN .... creating network ....
+   1 NEUT    1.  0. T  1.000d+99 s
+   2 PROT    1.  1. T  1.000d+99 s 
+   3 H   2   2.  1. T  1.000d+99 s 
+   4 HE  3   3.  2. T  1.000d+99 s 
+   5 HE  4   4.  2. T  1.000d+99 s
+   6 BE  7   7.  4. T  5.329d+01 d
+   7 B   8   8.  5. T  1.000d+99 s
+   8 LI  7   7.  3. T  1.000d+99 s 
+   9 C  11  11.  6. T  2.038d+01 m
+  10 B  11  11.  5. T  1.000d+99 s 
+  11 C  12  12.  6. T  1.000d+99 s 
+  12 C  13  13.  6. T  1.000d+99 s
+  13 N  13  13.  7. T  9.960d+00 m  
+  14 N  14  14.  7. T  1.000d+99 s
+  15 C  14  14.  6. T  5.730d+03 y
+  16 N  15  15.  7. T  1.000d+99 s
+  17 O  16  16.  8. T  1.000d+99 s
+  18 O  17  17.  8. T  1.000d+99 s
+  19 O  18  18.  8. T  1.000d+99 s
+  20 F  17  17.  9. T  6.480d+01 s 
+  21 F  18  18.  9. T  1.0970d+2 m
+  22 F  19  19.  9. T  1.000d+99 s
+  23 NE 20  20. 10. T  1.000d+99 s
+  24 NE 21  21. 10. T  1.000d+99 s
+  25 NE 22  22. 10. T  1.000d+99 s
+  26 NA 22  22. 11. T  2.603d+00 y
+  27 NA 23  23. 11. T  1.000d+99 s 
+  28 MG 23  23. 12. T  1.130d+01 s
+  29 MG 24  24. 12. T  1.000d+99 s
+  30 MG 25  25. 12. T  1.000d+99 s
+  31 MG 26  26. 12. T  1.000d+99 s
+  32 AL 26  26. 13. T  7.160d+05 y
+  33 AL 27  27. 13. T  1.000d+99 s
+  34 SI 27  27. 14. T  4.160d+00 s
+  35 SI 28  28. 14. T  1.000d+99 s
+  36 SI 29  29. 14. T  1.000d+99 s 
+  37 SI 30  30. 14. T  1.000d+99 s 
+  38 P  31  31. 15. T  1.000d+99 s
+  39 S  31  31. 16. T  2.580d+00 s
+  40 L   1   1.  0. F  1.000d+99 s
+  41 G   1   1.  0. F  1.000d+99 s
+  42 G  63  63.  0. F  1.000d+99 s
+  43 LI  6   6.  3. F  1.000d+99 s
+  44 BE  9   9.  4. F  1.000d+99 s
+  45 B  10  10.  5. F  1.000d+99 s
+  46 BE  8   8.  4. T  1.000d+99 s
+  47 O  14  14.  8. T  7.059d+01 s
+  48 O  15  15.  8. T  2.030d+00 m 
+  49 NA 21  21. 11. T  2.248d+01 s
+  50 AL 25  25. 13. T  7.180d+00 s
+  51 P  29  29. 15. T  4.100d+00 s
+  52 P  30  30. 15. T  2.500d+00 m
+  53 PB206 206. 82. T  1.000d+99 s
+  54 PB207 207. 82. T  1.000d+99 s
+  55 BI211 211. 83. T  1.000d+99 s
+  56 PO210 210. 84. T  1.000d+99 s
+  57 OOOOO   0.  0. F  1.000d+99 s
+   1 T  2 PROT    0 OOOOO  0 OOOOO   1 H   2     1.179   VITAL  (p,g)   5   1.000E+00
+   2 T  1 H   2   1 PROT   0 OOOOO   1 HE  3     5.494   VITAL  (p,g)   5   1.000E+00
+   3 T  2 HE  3   0 OOOOO  2 PROT    1 HE  4    12.860   VITAL  (v,v)  99   1.000E+00
+   4 T  1 HE  4   1 HE  3  0 OOOOO   1 BE  7     1.588   VITAL  (v,v)  99   1.000E+00
+   5 T  1 BE  7   0 OOOOO  0 OOOOO   1 LI  7     0.049   VITAL  (+,g)  14   1.000E+00
+   6 T  1 LI  7   1 PROT   0 OOOOO   2 HE  4    17.346   VITAL  (p,g)   5   1.000E+00
+   7 T  1 BE  7   1 PROT   0 OOOOO   1 B   8     0.137   VITAL  (p,g)   5   1.000E+00
+   8 T  1 B   8   0 OOOOO  0 OOOOO   2 HE  4    10.874   VITAL  (v,v)  99   1.000E+00
+   9 T  1 B   8   0 OOOOO  1 PROT    1 BE  7    -0.137   VITAL  (g,p)   6   1.000E+00
+  10 T  1 BE  7   1 HE  4  0 OOOOO   1 C  11     0.000   VITAL  (a,g)   9   1.000E+00
+  11 T  1 LI  7   1 HE  4  0 OOOOO   1 B  11     0.000   VITAL  (a,g)   9   1.000E+00
+  12 T  1 B  11   1 HE  4  1 NEUT    1 N  14     0.000   VITAL  (a,n)  11   1.000E+00
+  13 T  1 B  11   1 PROT   0 OOOOO   3 HE  4     0.000   VITAL  (p,g)   5   1.000E+00
+  14 F  1 C  12   1 PROT   0 OOOOO   1 N  13     3.455   VITAL  (p,g)   5   1.000E+00
+  15 F  1 C  13   1 PROT   0 OOOOO   1 N  14     7.551   VITAL  (p,g)   5   1.000E+00
+  16 T  1 N  13   1 PROT   0 OOOOO   1 O  14     4.628   VITAL  (p,g)   5   1.000E+00
+  17 T  1 N  14   1 PROT   0 OOOOO   1 O  15     9.059   VITAL  (p,g)   5   1.000E+00
+  18 F  1 N  15   1 PROT   1 HE  4   1 C  12     4.966   VITAL  (p,a)   8   1.000E+00
+  19 F  1 N  15   1 PROT   0 OOOOO   1 O  16    12.128   VITAL  (p,g)   5   1.000E+00
+  20 F  1 O  16   1 PROT   0 OOOOO   1 F  17     2.423   VITAL  (p,g)   5   1.000E+00
+  21 F  1 O  17   1 PROT   1 HE  4   1 N  14     1.191   VITAL  (p,a)   8   1.000E+00
+  22 F  1 O  17   1 PROT   0 OOOOO   1 F  18     6.867   VITAL  (p,g)   5   1.000E+00
+  23 F  1 O  18   1 PROT   1 HE  4   1 N  15     3.980   VITAL  (p,a)   8   1.000E+00
+  24 F  1 O  18   1 PROT   0 OOOOO   1 F  19     0.000   VITAL  (p,g)   5   1.000E+00
+  25 F  1 F  19   1 PROT   1 HE  4   1 O  16     0.000   VITAL  (p,a)   8   1.000E+00
+  26 F  1 F  19   1 PROT   0 OOOOO   1 NE 20     0.000   VITAL  (p,g)   5   1.000E+00
+  27 F  1 NE 20   1 PROT   0 OOOOO   1 NA 21     0.000   VITAL  (p,g)   5   1.000E+00
+  28 F  1 NE 21   1 PROT   0 OOOOO   1 NA 22     0.000   VITAL  (p,g)   5   1.000E+00
+  29 F  1 NE 22   1 PROT   0 OOOOO   1 NA 23     0.000   VITAL  (p,g)   5   1.000E+00
+  30 F  1 NA 22   1 PROT   0 OOOOO   1 NA 23     0.000   VITAL  (p,g)   5   1.000E+00
+  31 F  1 NA 23   1 PROT   1 HE  4   1 NE 20     0.000   VITAL  (p,a)   8   1.000E+00
+  32 F  1 NA 23   1 PROT   0 OOOOO   1 MG 24     0.000   VITAL  (p,g)   5   1.000E+00
+  33 F  1 MG 24   1 PROT   0 OOOOO   1 AL 25     0.000   VITAL  (p,g)   5   1.000E+00
+  34 T  1 MG 25   1 PROT   0 OOOOO   1 AL 26     0.000   VITAL  (p,g)   5   1.000E+00
+  35 F  1 MG 25   1 PROT   0 OOOOO   1 MG 26     0.000   VITAL  (p,g)   5   1.000E+00
+  36 F  1 MG 26   1 PROT   0 OOOOO   1 AL 27     0.000   VITAL  (p,g)   5   1.000E+00
+  37 F  1 AL 26   1 PROT   0 OOOOO   1 SI 27     0.000   VITAL  (p,g)   5   1.000E+00
+  38 T  1 AL 27   1 PROT   1 HE  4   1 MG 24     0.000   VITAL  (p,a)   8   1.000E+00
+  39 T  1 AL 27   1 PROT   0 OOOOO   1 SI 28     0.000   VITAL  (p,g)   5   1.000E+00
+  40 F  1 SI 28   1 PROT   0 OOOOO   1 P  29     0.000   VITAL  (p,g)   5   1.000E+00
+  41 F  1 SI 29   1 PROT   0 OOOOO   1 P  30     0.000   VITAL  (p,g)   5   1.000E+00
+  42 F  1 SI 30   1 PROT   0 OOOOO   1 P  31     0.000   VITAL  (p,g)   5   1.000E+00
+  43 T  3 HE  4   0 OOOOO  0 OOOOO   1 C  12     7.275   VITAL  (v,v)  99   1.000E+00
+  44 T  1 C  12   1 HE  4  0 OOOOO   1 O  16     7.162   VITAL  (a,g)   9   1.000E+00
+  45 T  1 C  13   1 HE  4  1 NEUT    1 O  16     0.000   VITAL  (a,n)  11   1.000E+00
+  46 F  1 N  14   1 HE  4  0 OOOOO   1 F  18     0.000   VITAL  (a,g)   9   1.000E+00
+  47 F  1 O  16   1 HE  4  0 OOOOO   1 NE 20     4.734   VITAL  (a,g)   9   1.000E+00
+  48 F  1 O  18   1 HE  4  0 OOOOO   1 NE 22     0.000   VITAL  (a,g)   9   1.000E+00
+  49 F  1 NE 20   1 HE  4  0 OOOOO   1 MG 24     9.312   VITAL  (a,g)   9   1.000E+00
+  50 F  1 NE 21   1 HE  4  1 NEUT    1 MG 24     2.551   VITAL  (a,n)  11   1.000E+00
+  51 F  1 NE 22   1 HE  4  0 OOOOO   1 MG 26    10.612   VITAL  (a,g)   9   1.000E+00
+  52 T  1 NE 22   1 HE  4  1 NEUT    1 MG 25    -0.480   VITAL  (a,n)  11   1.000E+00
+  53 F  1 MG 24   1 HE  4  0 OOOOO   1 SI 28     9.984   VITAL  (a,g)   9   1.000E+00
+  54 T  1 C  14   1 HE  4  0 OOOOO   1 O  18     0.000   VITAL  (a,g)   9   1.000E+00
+  55 T  1 C  14   1 PROT   0 OOOOO   1 N  15     0.000   VITAL  (p,g)   5   1.000E+00
+  56 F  1 N  15   1 HE  4  0 OOOOO   1 F  19     0.000   VITAL  (a,g)   9   1.000E+00
+  57 T  1 O  17   1 HE  4  0 OOOOO   1 NE 21     0.000   VITAL  (a,g)   9   1.000E+00
+  58 T  1 O  17   1 HE  4  1 NEUT    1 NE 20     0.000   VITAL  (a,n)  11   1.000E+00
+  59 T  2 C  12   0 OOOOO  1 PROT    1 NA 23     2.240   VITAL  (v,v)  99   1.000E+00
+  60 T  2 C  12   0 OOOOO  1 HE  4   1 NE 20     4.617   VITAL  (v,v)  99   1.000E+00
+  61 T  2 C  12   0 OOOOO  1 NEUT    1 MG 23     0.000   VITAL  (v,v)  99   1.000E+00
+  62 T  1 NE 20   1 HE  4  1 PROT    1 NA 23    -2.377   VITAL  (a,p)  12   1.000E+00
+  63 T  1 NA 23   1 HE  4  1 PROT    1 MG 26     1.821   VITAL  (a,p)  12   1.000E+00
+  64 T  1 MG 24   1 HE  4  1 PROT    1 AL 27    -1.601   VITAL  (a,p)  12   1.000E+00
+  65 T  1 MG 25   1 HE  4  1 NEUT    1 SI 28     2.653   VITAL  (a,n)  11   1.000E+00
+  66 T  2 O  16   0 OOOOO  1 PROT    1 P  31     7.677   VITAL  (v,v)  99   1.000E+00
+  67 T  2 O  16   0 OOOOO  1 HE  4   1 SI 28     9.593   VITAL  (v,v)  99   1.000E+00
+  68 T  2 O  16   0 OOOOO  1 NEUT    1 S  31     1.453   VITAL  (v,v)  99   1.000E+00
+  69 T  1 O  16   1 C  12  1 PROT    1 AL 27     0.000   VITAL  (v,v)  99   1.000E+00
+  70 T  1 O  16   1 C  12  1 HE  4   1 MG 24     0.000   VITAL  (v,v)  99   1.000E+00
+  71 T  1 O  16   1 C  12  1 NEUT    1 SI 27     0.000   VITAL  (v,v)  99   1.000E+00
+  72 T  1 NE 20   0 OOOOO  1 HE  4   1 O  16     0.000   VITAL  (g,a)  10   1.000E+00
+  73 T  1 N  13   0 OOOOO  1 PROT    1 C  12     0.000   VITAL  (g,p)   6   1.000E+00
+  74 T  1 F  17   0 OOOOO  1 PROT    1 O  16     0.000   VITAL  (g,p)   6   1.000E+00
+  75 T  1 C  14   1 PROT   1 NEUT    1 N  14     0.000   VITAL  (p,n)   7   1.000E+00
+  76 T  1 N  14   1 NEUT   1 PROT    1 C  14     0.000   VITAL  (n,p)   3   1.000E+00
+  77 T  1 C  14   1 HE  4  1 NEUT    1 O  17     0.000   VITAL  (a,n)  11   1.000E+00
+  78 T  1 O  17   1 NEUT   1 HE  4   1 C  14     0.000   VITAL  (n,a)   4   1.000E+00
+  79 T  1 BE  8   0 OOOOO  0 OOOOO   2 HE  4     0.000   VITAL  (v,v)  99   1.000E+00
+  80 T  1 C  12   0 OOOOO  0 OOOOO   3 HE  4     0.000   VITAL  (v,v)  99   1.000E+00
+  81 T  1 MG 23   1 NEUT   0 OOOOO   2 C  12     0.000   VITAL  (v,v)  99   1.000E+00
+  82 T  1 NA 23   1 PROT   0 OOOOO   2 C  12     0.000   VITAL  (v,v)  99   1.000E+00
+  83 T  1 NE 20   1 HE  4  0 OOOOO   2 C  12     0.000   VITAL  (v,v)  99   1.000E+00
+  84 T  1 AL 27   1 PROT   1 O  16   1 C  12     0.000   VITAL  (v,v)  99   1.000E+00
+  85 T  1 MG 24   1 HE  4  1 O  16   1 C  12     0.000   VITAL  (v,v)  99   1.000E+00
+  86 T  1 SI 27   1 NEUT   1 O  16   1 C  12     0.000   VITAL  (v,v)  99   1.000E+00
+  87 T  1 P  31   1 PROT   0 OOOOO   2 O  16     0.000   VITAL  (v,v)  99   1.000E+00
+  88 T  1 SI 28   1 HE  4  0 OOOOO   2 O  16     0.000   VITAL  (v,v)  99   1.000E+00
+  89 T  1 S  31   1 NEUT   0 OOOOO   2 O  16     0.000   VITAL  (v,v)  99   1.000E+00
+  90 F  1 C  11   0 OOOOO  0 OOOOO   1 B  11     0.000   VITAL  (+,g)  14   1.000E+00         
+  91 F  1 N  13   0 OOOOO  0 OOOOO   1 C  13     0.000   VITAL  (+,g)  14   1.000E+00         
+  92 F  1 C  14   0 OOOOO  0 OOOOO   1 N  14     0.000   VITAL  (-,g)  13   1.000E+00         
+  93 F  1 F  17   0 OOOOO  0 OOOOO   1 O  17     0.000   VITAL  (+,g)  14   1.000E+00         
+  94 F  1 F  18   0 OOOOO  0 OOOOO   1 O  18     0.000   VITAL  (+,g)  14   1.000E+00         
+  95 F  1 NA 22   0 OOOOO  0 OOOOO   1 NE 22     0.000   VITAL  (+,g)  14   1.000E+00         
+  96 F  1 MG 23   0 OOOOO  0 OOOOO   1 NA 23     0.000   VITAL  (+,g)  14   1.000E+00         
+  97 F  1 AL 26   0 OOOOO  0 OOOOO   1 MG 26     0.000   VITAL  (+,g)  14   1.000E+00         
+  98 F  1 SI 27   0 OOOOO  0 OOOOO   1 AL 27     0.000   VITAL  (+,g)  14   1.000E+00         
+  99 F  1 S  31   0 OOOOO  0 OOOOO   1 P  31     0.000   VITAL  (+,g)  14   1.000E+00         
+ 100 F  1 O  14   0 OOOOO  0 OOOOO   1 N  14     0.000   VITAL  (+,g)  14   1.000E+00         
+ 101 F  1 O  15   0 OOOOO  0 OOOOO   1 N  15     0.000   VITAL  (+,g)  14   1.000E+00         
+ 102 F  1 NA 21   0 OOOOO  0 OOOOO   1 NE 21     0.000   VITAL  (+,g)  14   1.000E+00         
+ 103 F  1 AL 25   0 OOOOO  0 OOOOO   1 MG 25     0.000   VITAL  (+,g)  14   1.000E+00         
+ 104 F  1 P  29   0 OOOOO  0 OOOOO   1 SI 29     0.000   VITAL  (+,g)  14   1.000E+00         
+ 105 F  1 P  30   0 OOOOO  0 OOOOO   1 SI 30     0.000   VITAL  (+,g)  14   1.000E+00         
+ 106 T  1 BI211   0 OOOOO  1 HE  4   1 PB207     0.000   VITAL  (g,a)  10   1.000E+00
+ 107 T  1 PO210   0 OOOOO  1 HE  4   1 PB206     0.000   VITAL  (g,a)  10   1.000E+00
+ 108 T  1 PO210   1 NEUT   0 OOOOO   1 PB207     0.000   VITAL  (n,g)   1   1.000E+00  
+ 109 F  2 HE  4   1 NEUT   0 OOOOO   1 BE  9     1.573   VITAL  (v,v)  99   1.000E+00
+ 110 F  1 BE  9   0 OOOOO  1 NEUT    2 HE  4     0.000   VITAL  (v,v)  99   1.000E+00
+
